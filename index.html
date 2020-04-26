@@ -1,8 +1,100 @@
-<html>
+<html lang="en">
+
 <head>
-<title>Lucas Mendes Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lucas Mendes</title>
 </head>
+
 <body bgcolor="#e3e3e3">
-<center><h1>Hello</h1></center>
+    
+    <nav class="site-nav grid">
+        <h1>Lucas Mendes</h1>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome" class="grid" >
+        <div class="welcome-text">
+            <h2>Tecnologie Enthusiast<br/>& Javascript Developer</h2>
+            <p class="leading">Lorem ipsum.</p>
+            <a href="#portfolio" class="button">My Work</a>
+        </div>
+        <div class="welcome-img">
+            <img src="assets/header.jpg" alt="Xícara de café centralizada em uma mesa.">
+        </div>
+    </section>
+    <section id="portfolio">
+        <h3>Some of my Projects</h3>
+        <div class="grid">
+            <a href="">
+                <img src="assets/project_1.png" alt="circulo vermelho claro com bordas vermelho escuras.">
+                <h4>Projeto 1</h4>
+            </a>
+            
+            <a href="">
+                <img src="assets/project_2.png" alt="circulo roxo claro com bordas roxo escuras.">
+                <h4>Projeto 2</h4>
+            </a>
+            
+            <a href="">
+                <img src="assets/project_3.png" alt="circulo verde claro com bordas verdes escuras.">
+                <h4>Projeto 3</h4>
+            </a>
+            
+            <a href="">
+                <img src="assets/project_4.png" alt="circulo azul claro com bordas azuis escuras.">
+                <h4>Projeto 4</h4>
+            </a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>Thinks that I Know and Study</h3>
+        <ul class="grid">
+            <li>
+                <img src="assets/know-react.svg" alt="logo do framework React">
+                <h4>React JS</h4>
+            </li>
+            <li>
+                <img src="assets/know-nodejs.svg" alt="logo do framework React">
+                <h4>Node JS</h4>
+            </li>
+            <li>
+                <img src="assets/know-mobile.svg" alt="logo do framework React">
+                <h4>Ionic & React Native</h4>
+            </li>
+            <li>
+                <img src="assets/know-cloud.svg" alt="logo do framework React">
+                <h4>Firebase & AWS</h4>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="Contact"> 
+        <h3>Get in Touch</h3>
+        <p class="leading">Lorem Ipsum</p>
+        <form>
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="EMAIL">
+            <textarea placeholder="MESSAGE"></textarea>
+            <button class="button">Send</button>
+        </form>
+    </section>
+
+    <footer class="grid">
+
+        <p class="copyright">copyright 2020 - Lucas Mendes.</p>
+        <ul class="social">
+            <li><a href=""><img src="assets/social-facebook.svg" alt="facebook logotipo"></a></li>
+            <li><a href=""><img src="assets/social-linkedin.svg" alt="linkedin logotipo"></a></li>
+            <li><a href=""><img src="assets/social-github.svg" alt="github logotipo"></a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>
