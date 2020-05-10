@@ -34,6 +34,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+section {
+  padding: 80px 20px;
+}
+
+section .cards {
+  padding: 40px 0px;
+}
+
+main {
+  width:100%;
+}
+
 .titleName {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -127,7 +139,7 @@ h3 {
 HERO
 ==================*/
 section.hero {
-  margin: 80px 0;
+
 }
 
 section.hero .container {
@@ -150,12 +162,14 @@ section.hero p {
 /*=============== 
 MAIN
 ==================*/
-main {
-  margin-bottom: 80px;
-}
 /*=============== 
 CARDS
 ==================*/
+.cardTitle {
+  color: var(--dgray);
+  text-align: center;
+}
+
 .cards {
   width: 90%;
   max-width: 980px;
@@ -170,7 +184,7 @@ CARDS
   font-size: 1.6rem;
   line-height: 2.6rem;
   font-weight: 400;
-  color: #ecf0f1;
+  color: var(--light);
 }
 
 .card {
@@ -329,9 +343,8 @@ FORM
 ==================*/
 #form {
   width:100%;
+  background: var(--secondary);
 
-  background: var(--primary);
-  padding: 80px 0;
   margin:0;
 
   display:flex;
@@ -400,14 +413,16 @@ FORM
   }
 }
 
-@media (max-width: 564px) {
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-  }
-} 
-
 @media( max-width: 672px ) {
+  .hero .container img {
+    max-width: 200px;
+    max-height: 140px;
+  }
+
+}
+
+@media (max-width: 565px) {
+
   .hero .container img {
     max-width: 270px;
     max-height: 225px;
@@ -420,9 +435,14 @@ FORM
     align-items: center;
   }
 
-}
+  .hero .container img {
+    margin-bottom: 20px;
+  }
 
-@media (max-width: 565px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
 
   nav {
     display: none;
@@ -516,4 +536,32 @@ FORM
   #form h3 {
     font-size: 2rem;
   }
+}
+
+@media print {
+  .info,
+  .button,
+  .menu-section,
+  #form {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .hero .container {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+
+  header .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleName,
+  .text--medium {
+    color: var(--dark);
+  }
+  
 }

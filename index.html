@@ -1,97 +1,134 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <title>Lucas Mendes Portfolio</title>
+    <link rel="icon" href="icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <title>Lucas Mendes</title>
-</head>
-
-<body bgcolor="#e3e3e3">
-    
-    <nav class="site-nav grid">
-        <h1>Lucas Mendes</h1>
-        <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="welcome" class="grid" >
-        <div class="welcome-text">
-            <h2>Technology Enthusiast<br/>& Javascript Developer</h2>
-            <p class="leading">Lorem ipsum.</p>
-            <a href="#portfolio" class="button">My Work</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  </head>
+  <body>
+    <header id="myHeader">
+      <div class="container">
+        <h3 class="titleName">Lucas Mendes</h3>
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#hero">About</a>
+              </li>
+              <li>
+                <a href="#projets">Projects</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#form">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="welcome-img">
-            <img src="assets/header2.svg" alt="Xícara de café centralizada em uma mesa.">
+      </div>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="container">
+        <div>
+          <h2>
+            Developer focused on Web and Mobile Technologies, with an interest in Industry 4.0 and Computer Vision.
+          </h2>
+          <p>
+            This is my personal website with my portfolio and current informations.
+          </p>
+          <a href="#" class="button">View CV in PDF!</a>
         </div>
+        <img
+          src="assets/personal.png"
+          alt=""
+        />
+      </div>
     </section>
-    <section id="portfolio">
-        <h3>Some of my Projects</h3>
-        <div class="projects grid">
-            
-            <a href="">
-                <img src="assets/project_1.png" alt="circulo vermelho claro com bordas vermelho escuras.">
-                <h4>Projeto 1</h4>
-            </a>
-            
-            <a href="">
-                <img src="assets/project_2.png" alt="circulo roxo claro com bordas roxo escuras.">
-                <h4>Projeto 2</h4>
-            </a>
-            
-            <a href="">
-                <img src="assets/project_3.png" alt="circulo verde claro com bordas verdes escuras.">
-                <h4>Projeto 3</h4>
-            </a>
-            
+
+    <main>
+      <section id="projets">
+        <h3 class="cardTitle">Some of my Projects</h3>
+      <section class="cards" id="cards">
+        <div class="card">
+          <div class="image">
+            <img src="assets/beTheHero.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              Formulário Animado com JS puro e CSS Animation | Mayk Brito
+            </p>
+            <div class="info">
+              <p class="text--medium">57 Min</p>
+              <p class="price text--medium">Free</p>
+            </div>
+          </div>
         </div>
+      </section>
+    </section>
+    </main>
+
+
+
+    <section id="form">
+      <form method="post" action="http://formspree.io/lrmen14@gmail.com">
+        <h3>Contact Form</h3>
+        <div class="form-group">
+          <input class="input-control" name="name" placeholder="Name" />
+
+          <input type="email" name="_replyto" class="input-control" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+          <input class="input-control" name="_subject" placeholder="Subject" />
+        </div>
+
+        <div class="form-group">
+          <textarea class="input-control" name="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="button">Send</button>
+
+        </div>
+
+      </form>
     </section>
 
-    <section id="skills">
-        <h3>Thinks that I Know and Study</h3>
-        <ul class="grid">
-            <li>
-                <img class="know-icons" src="assets/know-react.svg" alt="logo do framework React">
-                <h4>React JS</h4>
-            </li>
-            <li>
-                <img class="know-icons" src="assets/know-nodejs.svg" alt="logo do framework React">
-                <h4>Node JS</h4>
-            </li>
-            <li>
-                <img class="know-icons" src="assets/know-mobile.svg" alt="logo do framework React">
-                <h4>Ionic & React Native</h4>
-            </li>
-            <li>
-                <img class="know-icons" src="assets/know-cloud.svg" alt="logo do framework React">
-                <h4>Firebase & AWS</h4>
-            </li>
-        </ul>
-    </section>
-    
-    <section id="contact"> 
-        <h3>Get in Touch</h3>
-        <p class="leading">Lorem Ipsum</p>
-        <form>
-            <input type="text" placeholder="NAME">
-            <input type="text" placeholder="EMAIL">
-            <textarea placeholder="MESSAGE"></textarea>
-            <button class="button">Send</button>
-        </form>
-    </section>
+    <div class="modal-overlay">
+      <div class="modal">
+        <a class="close-modal">
+          <svg viewBox="0 0 20 20">
+            <path
+              fill="#000000"
+              d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"
+            ></path>
+          </svg>
+        </a>
+        <div class="modal-content">
+          <div class="video-background">
+            <div class="video-foreground">
+              <iframe
+                src="https://www.youtube.com/embed/GykTLqODQuU"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <footer class="grid">
-
-        <p class="copyright">copyright 2020 - Lucas Mendes.</p>
-        <ul class="social">
-            <li><a href=""><img class="social-icons" src="assets/social-facebook.svg" alt="facebook logotipo"></a></li>
-            <li><a href=""><img class="social-icons" src="assets/social-linkedin.svg" alt="linkedin logotipo"></a></li>
-            <li><a href=""><img class="social-icons" src="assets/social-github.svg" alt="github logotipo"></a></li>
-        </ul>
-    </footer>
-</body>
-
+    <script src="scripts.js"></script>
+    <script src="menu.js"></script>
+  </body>
 </html>
