@@ -259,11 +259,11 @@ CARDS
 .card {
   display: flex;
   flex-direction: column;
-  background-color: var(--secondary);
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: var(--dark2 );
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  opacity: 0.7;
-  transition: opacity 0.5s;
 }
 
 .card:hover {
@@ -296,7 +296,11 @@ CARDS
 }
 
 .content {
-  margin: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .title {
@@ -305,8 +309,10 @@ CARDS
 
 .info {
   display: flex;
-  align-self: end;
   align-items: center;
+  justify-content: space-between;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .price {
