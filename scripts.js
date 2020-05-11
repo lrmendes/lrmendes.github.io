@@ -27,19 +27,19 @@ const videos = [
   {
     title: "A FullStack project build in a course of Javascript Modern Frameworks.",
     duration: "Web & Mobile", 
-    thumb: "assets/cards/be-the-hero.png", // 
+    thumb: "assets/cards/be-the-hero4.png", // 
     video_id: "GykTLqODQuU"
   },
   {
     title: "E-Commerce System that provides an way for the local stores sell their products and local customers buy them.",
     duration: "Web & Mobile",
-    thumb: "assets/cards/locdown.png",
+    thumb: "assets/cards/locdown4.png",
     video_id: "HN1UjzRSdBk"
   },
   {
     title: "Complete Sales Module for a cooperative Enterprise Resource Planning System.",
     duration: "Web",
-    thumb: "assets/cards/erpcrm.png",
+    thumb: "assets/cards/erpcrm4.png",
     video_id: "rAzHvYnQ8DY"
   },
 ];
