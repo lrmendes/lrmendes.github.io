@@ -3,10 +3,9 @@
   <head>
     <title>Lucas Mendes Portfolio</title>
     <link rel="icon" href="icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style2-2.css" />
+    <link rel="stylesheet" href="style2.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link href="js/lightboxjs/css/lightbox.css" rel="stylesheet" />
   </head>
   <body>
     <header id="myHeader">
@@ -75,51 +74,20 @@
       <section id="projects">
         <h3 class="cardTitle">My Projects</h3>
       <section class="cards" id="cards">
-        
-        <a class="card" href="assets/projects/LocDown/locdown.jpg" data-lightbox="project1">
+        <div class="card">
           <div class="image">
-            <img src="assets/cards/locdown4.png" />
+            <img src="assets/beTheHero.png" />
           </div>
           <div class="content">
             <p class="title text--medium">
-              E-Commerce System that provides an way for the local stores sell their products and local customers buy them.
+              Formulário Animado com JS puro e CSS Animation | Mayk Brito
             </p>
             <div class="info">
-              <p class="text--medium">Web & Mobile</p>
+              <p class="text--medium">57 Min</p>
               <p class="price text--medium">View More</p>
             </div>
           </div>
-        </a>
-
-        <a class="card" href="assets/projects/ERP-Sales/sales1.png" data-lightbox="project2">
-          <div class="image">
-            <img src="assets/cards/erpcrm4.png" />
-          </div>
-          <div class="content">
-            <p class="title text--medium">
-              Complete Sales Module for a cooperative Enterprise Resource Planning System.
-            </p>
-            <div class="info">
-              <p class="text--medium">Web</p>
-              <p class="price text--medium">View More</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="card" href="assets/projects/BeTheHero/Hero1.png" data-lightbox="project3">
-          <div class="image">
-            <img src="assets/cards/be-the-hero4.png" />
-          </div>
-          <div class="content">
-            <p class="title text--medium">
-              A FullStack project build in a course of Javascript Modern Frameworks.
-            </p>
-            <div class="info">
-              <p class="text--medium">Web & Mobile</p>
-              <p class="price text--medium">View More</p>
-            </div>
-          </div>
-        </a>
+        </div>
       </section>
     </section>
     </main>
@@ -154,6 +122,8 @@
       </section>
       </div>
 
+
+
     <section id="form">
       <form method="post" action="http://formspree.io/lrmen14@gmail.com">
         <h3>Contact Form</h3>
@@ -179,27 +149,31 @@
       </form>
     </section>
 
-    <a style="display: hidden" href="assets/projects/LocDown/locdown2.jpg" data-lightbox="project1"></a>
-    <a style="display: hidden" href="assets/projects/LocDown/locdown3.png" data-lightbox="project1"></a>
-    <a style="display: hidden" href="assets/projects/LocDown/locdown4.png" data-lightbox="project1"></a>
-    <a style="display: hidden" href="assets/projects/LocDown/locdown5.png" data-lightbox="project1"></a>
+    <div class="modal-overlay">
+      <div class="modal">
+        <a class="close-modal">
+          <svg viewBox="0 0 20 20">
+            <path
+              fill="#000000"
+              d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"
+            ></path>
+          </svg>
+        </a>
+        <div class="modal-content">
+          <div class="video-background">
+            <div class="video-foreground">
+              <iframe
+                src="https://www.youtube.com/embed/GykTLqODQuU"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <a style="display: hidden" href="assets/projects/ERP-Sales/sales2.png" data-lightbox="project2"></a>
-    <a style="display: hidden" href="assets/projects/ERP-Sales/sales3.png" data-lightbox="project2"></a>
-
-    <a style="display: hidden" href="assets/projects/BeTheHero/Hero2.png" data-lightbox="project3"></a>
-    <a style="display: hidden" href="assets/projects/BeTheHero/Hero3.jpg" data-lightbox="project3"></a>
-    <a style="display: hidden" href="assets/projects/BeTheHero/Hero4.jpg" data-lightbox="project3"></a>
-    <a style="display: hidden" href="assets/projects/BeTheHero/Hero5.jpg" data-lightbox="project3"></a>
-
-    <script src="topmenu.js"></script>
-    <script src="js/lightboxjs/js/lightbox-plus-jquery.min.js"></script>
-    <script>
-      lightbox.option({
-        'resizeDuration': 200,
-        'alwaysShowNavOnTouchDevices':true,
-        'wrapAround': true
-      })
-   </script>
+    <script src="scripts.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
