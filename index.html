@@ -31,16 +31,16 @@
           <nav>
             <ul>
               <li>
-                <a href="#about">About</a>
+                <a href="#about" onclick="gtag('event', 'click', {'event_category': 'top_menu','event_label': 'about'})">About</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" onclick="gtag('event', 'click', {'event_category': 'top_menu','event_label': 'projects'})">Projects</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills" onclick="gtag('event', 'click', {'event_category': 'top_menu','event_label': 'skills'})">Skills</a>
               </li>
               <li>
-                <a href="#form">Contact</a>
+                <a href="#form" onclick="gtag('event', 'click', {'event_category': 'top_menu','event_label': 'contact'})">Contact</a>
               </li>
             </ul>
           </nav>
@@ -64,9 +64,9 @@
             This is my personal website with some of my portfolio and current informations.
           </p>
           <div class="grd">
-          <a href="https://www.facebook.com/profile.php?id=100003230539895" onclick="ga('send','event','social','click','facebook', 0)" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/social-facebook.svg"></a>
-          <a href="https://github.com/lrmendes" onclick="ga('send','event','social','click','github', 0)" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/github.png"></a>
-          <a href="https://www.linkedin.com/in/lucas-ribeiro-mendes-913b8b15b/" onclick="ga('send','event','social','click','linkedin', 0)" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/social-linkedin.svg"></a>
+          <a href="https://www.facebook.com/profile.php?id=100003230539895" onclick="gtag('event', 'click', {'event_category': 'social_medias','event_label': 'facebook'})" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/social-facebook.svg"></a>
+          <a href="https://github.com/lrmendes" onclick="gtag('event', 'click', {'event_category': 'social_medias','event_label': 'github'})" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/github.png"></a>
+          <a href="https://www.linkedin.com/in/lucas-ribeiro-mendes-913b8b15b/" onclick="gtag('event', 'click', {'event_category': 'social_medias','event_label': 'linkedin'})" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/social-linkedin.svg"></a>
           </div>
         </div>
         <div class="profileDiv">
@@ -75,7 +75,7 @@
           src="assets/personal3.png"
           alt=""
         />
-        <a href="/cv/curriculum.pdf" target="_blank" class="button">View CV in PDF</a>
+        <a href="/cv/curriculum.pdf" onclick="gtag('event', 'click', {'event_category': 'social_medias','event_label': 'curriculum'})" target="_blank" class="button">View CV in PDF</a>
         </div>
       </div>
     </section>
@@ -86,7 +86,7 @@
         <h3 class="cardTitle">My Projects</h3>
       <section class="cards" id="cards">
 
-        <a class="card" href="https://devpost.com/software/arbeit" onclick="ga('send','event','projects','click','arbeit', 0)" target="_blank">
+        <a class="card" href="https://devpost.com/software/arbeit" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'arbeit'})" target="_blank">
           <div class="image">
             <img src="assets/cards/arbeit.png" />
           </div>
@@ -101,7 +101,7 @@
           </div>
         </a>
         
-        <a class="card" href="assets/projects/LocDown/locdown.jpg" data-lightbox="project1">
+        <a class="card" href="assets/projects/LocDown/locdown.jpg" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'locdown'})"  data-lightbox="project1">
           <div class="image">
             <img src="assets/cards/locdown4.png" />
           </div>
@@ -116,7 +116,7 @@
           </div>
         </a>
 
-        <a class="card" href="assets/projects/BeTheHero/Hero1.png" data-lightbox="project3">
+        <a class="card" href="assets/projects/BeTheHero/Hero1.png" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'beTheHero'})" data-lightbox="project3">
           <div class="image">
             <img src="assets/cards/be-the-hero4.png" />
           </div>
@@ -131,7 +131,7 @@
           </div>
         </a>
 
-        <a class="card" href="assets/projects/EncryptedChat/chat1.jpeg" data-lightbox="project4">
+        <a class="card" href="assets/projects/EncryptedChat/chat1.jpeg" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'encryptedChat'})" data-lightbox="project4">
           <div class="image">
             <img src="assets/cards/encryptedchat.png" />
           </div>
@@ -146,7 +146,7 @@
           </div>
         </a>
 
-        <a class="card" href="assets/projects/ERP-Sales/sales1.png" data-lightbox="project2">
+        <a class="card" href="assets/projects/ERP-Sales/sales1.png" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'salesERP'})" data-lightbox="project2">
           <div class="image">
             <img src="assets/cards/erpcrm4.png" />
           </div>
@@ -161,7 +161,7 @@
           </div>
         </a>
 
-        <a class="card" href="https://lrmendes.github.io/React-GraphQL-PokemonAPI" target="_blank">
+        <a class="card" href="https://lrmendes.github.io/React-GraphQL-PokemonAPI" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'pokemonAPI'})" target="_blank">
           <div class="image">
             <img src="assets/projects/PokemonData/pokemonData.png" />
           </div>
@@ -184,7 +184,7 @@
       <section id="skills">
         <h3>Professional Skills</h3>
         <ul class="skills">
-            <li><a href="https://github.com/lrmendes?tab=repositories&language=javascript" target="_blank" style="text-decoration: none;">
+            <li><a href="https://github.com/lrmendes?tab=repositories&language=javascript"  onclick="gtag('event', 'click', {'event_category': 'skills','event_label': 'Web'})" target="_blank" style="text-decoration: none;">
                 <h4>WEB</h4>
                 <img class="know-icons" src="assets/js2.png" alt="logo do framework React">
                 <div>
@@ -193,12 +193,12 @@
                   <h4 class="plus">Wordpress</h4>
                 </div>
             </a></li>
-            <li><a href="https://github.com/lrmendes?tab=repositories&q=React%20Native+in%3Aname%2Cdescription" target="_blank" style="text-decoration: none;">
+            <li><a href="https://github.com/lrmendes?tab=repositories&q=React%20Native+in%3Aname%2Cdescription"  onclick="gtag('event', 'click', {'event_category': 'skills','event_label': 'Mobile'})" target="_blank" style="text-decoration: none;">
                 <h4>MOBILE</h4>
                 <img class="know-icons" src="assets/know-mobile.svg" alt="logo do framework React">
                 <h4 class="plus">React Native</h4>
             </a></li>
-            <li><a href="https://github.com/lrmendes?tab=repositories&language=python" target="_blank" style="text-decoration: none;">
+            <li><a href="https://github.com/lrmendes?tab=repositories&language=python" target="_blank" onclick="gtag('event', 'click', {'event_category': 'skills','event_label': 'MachineLearning'})" style="text-decoration: none;">
               <h4>MACHINE LEARNING</h4>
               <img class="know-icons" src="assets/python2.svg" alt="logo do framework React">
               <div>
@@ -207,7 +207,7 @@
                 <h4 class="plus">Pandas</h4>
               </div>
             </a></li>
-            <li><a href="https://github.com/lrmendes?tab=repositories&q=cloud+in%3Aname%2Cdescription" target="_blank" style="text-decoration: none;">
+            <li><a href="https://github.com/lrmendes?tab=repositories&q=cloud+in%3Aname%2Cdescription" onclick="gtag('event', 'click', {'event_category': 'skills','event_label': 'Cloud'})" target="_blank" style="text-decoration: none;">
                 <h4>CLOUD</h4>
                 <img class="know-icons" src="assets/know-cloud.svg" alt="logo do framework React">
                 <div>
