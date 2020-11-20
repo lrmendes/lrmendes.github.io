@@ -51,23 +51,28 @@
     <div class="bg1">
     <section class="about" id="about">
       <div class="container">
-        <div class="container2">
-          <div>
-            <h2>
-              Web & Mobile Developer
-            </h2>
-            <h4 class="subtitle">
-              Machine Learning & Data Science enthusiast
-            </h4>
-          </div>
-          <p>
-            This is my personal website with some of my portfolio and current informations.
-          </p>
-          <div class="grd">
+        <div class="grd">
           <a href="https://www.facebook.com/profile.php?id=100003230539895" onclick="gtag('event', 'click', {'event_category': 'social_medias','event_label': 'facebook'})" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/social-facebook.svg"></a>
           <a href="https://github.com/lrmendes" onclick="gtag('event', 'click', {'event_category': 'social_medias','event_label': 'github'})" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/github.png"></a>
           <a href="https://www.linkedin.com/in/lucas-ribeiro-mendes-913b8b15b/" onclick="gtag('event', 'click', {'event_category': 'social_medias','event_label': 'linkedin'})" class="socialButton" target="_blank"><img class="socialImg" src="assets/social/social-linkedin.svg"></a>
           </div>
+        <div class="container2">
+          <div>
+            <h3>
+              Data Science
+            </h3>
+            <h4 class="head">Python Stack</h4>
+            <h3 class="stack">
+              Full Stack Development
+            </h3>
+            <h4 class="head">JavaScript Stack</h4>
+          </div>
+          <hr class="hr-head">
+          <p>
+            Msc Student conducting a master's thesis in the areas of Industry 4.0 and Data Science.
+          <br>
+            I work as Undergraduate Researcher with the development of Web technologies (Node, React) and Data Science (R, Shiny) in a NoSQL food database.
+          </p>
         </div>
         <div class="profileDiv">
         <img
@@ -84,8 +89,16 @@
     <main>
       <section id="projects">
         <h3 class="cardTitle">My Projects</h3>
-      <section class="cards" id="cards">
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('datascience')"> Data Science</button>
+          <button class="btn" onclick="filterSelection('fullstack')"> Full Stack</button>
+          <button class="btn" onclick="filterSelection('mobile')"> Mobile (Only)</button>
+          <button class="btn" onclick="filterSelection('web')"> Web (Only)</button>
+        </div>
+      <section class="cards" id="cards">  
 
+        <div class="column mobile">
         <a class="card" href="https://devpost.com/software/arbeit" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'arbeit'})" target="_blank">
           <div class="image">
             <img src="assets/cards/arbeit.png" />
@@ -100,7 +113,9 @@
             </div>
           </div>
         </a>
+        </div>
         
+        <div class="column fullstack">
         <a class="card" href="assets/projects/LocDown/locdown.jpg" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'locdown'})"  data-lightbox="project1">
           <div class="image">
             <img src="assets/cards/locdown4.png" />
@@ -110,12 +125,14 @@
               [ Hackaton - 04/may ] E-Commerce System that provides an way for the local stores sell their products and local customers buy them.
             </p>
             <div class="info">
-              <p class="text--medium">Web & Mobile</p>
+              <p class="text--medium">Full Stack</p>
               <p class="price text--medium">View More</p>
             </div>
           </div>
         </a>
+        </div>
 
+        <div class="column fullstack">
         <a class="card" href="assets/projects/BeTheHero/Hero1.png" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'beTheHero'})" data-lightbox="project3">
           <div class="image">
             <img src="assets/cards/be-the-hero4.png" />
@@ -125,12 +142,65 @@
               A FullStack project build in a course of Javascript Modern Frameworks.
             </p>
             <div class="info">
-              <p class="text--medium">Web & Mobile</p>
+              <p class="text--medium">Full Stack</p>
               <p class="price text--medium">View More</p>
             </div>
           </div>
         </a>
+        </div>
 
+        <div class="column datascience">
+          <a class="card" href="https://github.com/lrmendes/SmartParking-Data-Analysis-Dashboard" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'sp-data-simulator'})" target="_blank">
+            <div class="image">
+              <img src="assets/cards/sp-data-simulator.png" />
+            </div>
+            <div class="content">
+              <p class="title text--medium">
+                Robust simulator with dozens of variables for Data Simulation in Smart Parking systems
+              </p>
+              <div class="info">
+                <p class="text--medium">Data Science</p>
+                <p class="price text--medium">View More</p>
+              </div>
+            </div>
+          </a>
+          </div>
+
+        <div class="column datascience">
+          <a class="card" href="https://github.com/lrmendes/SmartParking-Data-Analysis-Dashboard" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'sp-data-analytics'})" target="_blank">
+            <div class="image">
+              <img src="assets/cards/sp-data-analytics.png" />
+            </div>
+            <div class="content">
+              <p class="title text--medium">
+                A complete panel for data analysis based on Smart Parking data.
+              </p>
+              <div class="info">
+                <p class="text--medium">Data Science</p>
+                <p class="price text--medium">View More</p>
+              </div>
+            </div>
+          </a>
+          </div>
+
+            <div class="column datascience">
+              <a class="card" href="https://github.com/lrmendes/SmartParking-Data-Analysis-Dashboard" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'sp-timeseries-forecasting'})" target="_blank">
+                <div class="image">
+                  <img src="assets/cards/sp-timeseries-forecasting.png" />
+                </div>
+                <div class="content">
+                  <p class="title text--medium">
+                    Set of algorithms for time series prediction and comparison between them.
+                  </p>
+                  <div class="info">
+                    <p class="text--medium">Data Science</p>
+                    <p class="price text--medium">View More</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+        
+        <div class="column mobile">
         <a class="card" href="assets/projects/EncryptedChat/chat1.jpeg" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'encryptedChat'})" data-lightbox="project4">
           <div class="image">
             <img src="assets/cards/encryptedchat.png" />
@@ -145,23 +215,27 @@
             </div>
           </div>
         </a>
+        </div>
 
-        <a class="card" href="assets/projects/ERP-Sales/sales1.png" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'salesERP'})" data-lightbox="project2">
-          <div class="image">
-            <img src="assets/cards/erpcrm4.png" />
-          </div>
-          <div class="content">
-            <p class="title text--medium">
-              Complete Sales Module for a cooperative Enterprise Resource Planning System.
-            </p>
-            <div class="info">
-              <p class="text--medium">Web</p>
-              <p class="price text--medium">View More</p>
+          <div class="column fullstack web">
+          <a class="card" href="assets/projects/ERP-Sales/sales1.png" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'salesERP'})" data-lightbox="project2">
+            <div class="image">
+              <img src="assets/cards/erpcrm4.png" />
             </div>
-          </div>
-        </a>
+            <div class="content">
+              <p class="title text--medium">
+                Complete Sales Module for a cooperative Enterprise Resource Planning System.
+              </p>
+              <div class="info">
+                <p class="text--medium">Web</p>
+                <p class="price text--medium">View More</p>
+              </div>
+            </div>
+          </a>
+        </div>
 
-        <a class="card" href="https://lrmendes.github.io/React-GraphQL-PokemonAPI" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'pokemonAPI'})" target="_blank">
+        <div class="column web">
+        <a class="card" href="https://github.com/lrmendes/React-GraphQL-PokemonAPI" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'pokemonAPI'})" target="_blank">
           <div class="image">
             <img src="assets/projects/PokemonData/pokemonData.png" />
           </div>
@@ -175,6 +249,7 @@
             </div>
           </div>
         </a>
+        </div>
 
       </section>
     </section>
@@ -188,9 +263,8 @@
                 <h4>WEB</h4>
                 <img class="know-icons" src="assets/js2.png" alt="logo do framework React">
                 <div>
-                  <h4 class="plus">Javascript</h4>
-                  <h4 class="plus">PHP</h4>
-                  <h4 class="plus">Wordpress</h4>
+                  <h4 class="plus">React</h4>
+                  <h4 class="plus">Node</h4>
                 </div>
             </a></li>
             <li><a href="https://github.com/lrmendes?tab=repositories&q=React%20Native+in%3Aname%2Cdescription"  onclick="gtag('event', 'click', {'event_category': 'skills','event_label': 'Mobile'})" target="_blank" style="text-decoration: none;">
@@ -199,12 +273,12 @@
                 <h4 class="plus">React Native</h4>
             </a></li>
             <li><a href="https://github.com/lrmendes?tab=repositories&language=python" target="_blank" onclick="gtag('event', 'click', {'event_category': 'skills','event_label': 'MachineLearning'})" style="text-decoration: none;">
-              <h4>MACHINE LEARNING</h4>
+              <h4>Data Science</h4>
               <img class="know-icons" src="assets/python2.svg" alt="logo do framework React">
               <div>
                 <h4 class="plus">TensorFlow</h4>
-                <h4 class="plus">Keras</h4>
                 <h4 class="plus">Pandas</h4>
+                <h4 class="plus">PowerBI / Tableau</h4>
               </div>
             </a></li>
             <li><a href="https://github.com/lrmendes?tab=repositories&q=cloud+in%3Aname%2Cdescription" onclick="gtag('event', 'click', {'event_category': 'skills','event_label': 'Cloud'})" target="_blank" style="text-decoration: none;">
@@ -263,6 +337,7 @@
     <a style="display: hidden" href="assets/projects/EncryptedChat/chat5.gif" data-lightbox="project4"></a>
 
     <script src="topmenu.js"></script>
+    <script src="projects.js"></script>
     <script src="js/lightboxjs/js/lightbox-plus-jquery.min.js"></script>
     <script>
       lightbox.option({

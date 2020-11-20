@@ -7,6 +7,7 @@
     --dark2: #1a1a1a;
     --light: #FFFFFF;
     --lgray: #757575;
+    --lgray3: #cfcfcf;
     --lgray2: #e6e6e6;
     --dgray: #ffffff;
 
@@ -104,6 +105,7 @@ main {
 
 .socialImg {
   margin-right: 25px;
+  margin-top: 20px;
   max-width: 60px;
   max-height: auto;
   border-radius: 50%;
@@ -121,6 +123,43 @@ main {
   width: 100%;
   z-index:10;
 }
+
+/* ---------------------------- */
+
+#myBtnContainer {
+  margin-top: 15px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 120px));
+  justify-content: center;
+}
+
+.column {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border-radius: 2px;
+  outline: none;
+  padding: 12px 6px;
+  background-color: #999999;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #0f0f0f;
+   color: white;
+}
+
+/* ------------------------------------------------ */
 
 header {
   background-color: var(--primary);
@@ -181,6 +220,22 @@ h4 {
   line-height: 3.0rem;
 }
 
+.head {
+  color: var(--lgray3);
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+}
+
+.stack {
+  margin-top: 20px;
+}
+
+.hr-head {
+  margin-top: 15px;
+  color: var(--lgray);
+  max-width: 25%;
+}
+
 .plus {
   color: var(--dgray);
   font-size: 2.0rem;
@@ -236,10 +291,10 @@ section.about .container {
 }
 
 section.about p {
-  color: rgb(154, 142, 191);
-  font-size: 1.8rem;
+  color: rgb(219, 207, 255);
+  font-size: 1.6rem;
   line-height: 3.2rem;
-  margin: 10px 0px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 
@@ -261,10 +316,10 @@ CARDS
   width: 90%;
   max-width: 1200px;
   margin: auto;
-
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   grid-gap: 20px;
+  justify-content: center;
 }
 
 .text--medium {
@@ -623,6 +678,15 @@ FORM
 }
 
 @media (max-width: 565px) {
+
+  .socialImg {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .hr-head {
+    max-width: 100%;
+  }
 
   .profile {
     max-width: 225px;
