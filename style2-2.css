@@ -7,8 +7,9 @@
     --dark2: #1a1a1a;
     --light: #FFFFFF;
     --lgray: #757575;
-    --lgray3: #cfcfcf;
     --lgray2: #e6e6e6;
+    --lgray3: #cfcfcf;
+    --lgray4: #a3a3a3;
     --dgray: #ffffff;
 
     --primaryButton: #000000;
@@ -23,6 +24,7 @@
 
 html {
   font-size: 70%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -122,6 +124,10 @@ main {
   top: 0;
   width: 100%;
   z-index:10;
+}
+
+#projects {
+
 }
 
 /* ---------------------------- */
@@ -317,9 +323,26 @@ CARDS
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-template-columns: repeat(15, minmax(300px, 300px));
   grid-gap: 20px;
-  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  max-height: 450px;
+}
+
+.cards::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.cards::-webkit-scrollbar-track {
+  background-color: #0b131f;
+  border-radius: 5px;
+}
+ 
+.cards::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  /*outline: 1px solid slategrey;*/
+  border-radius: 5px;
 }
 
 .text--medium {
@@ -428,12 +451,13 @@ SKILLS
   padding: 80px 20px;
 }
 
-#skills {
-  
-}
-
 #skills h3{
   text-align: center;
+}
+
+#skills-p {
+  text-align: center;
+  color: var(--lgray4);
 }
 
 .skills a {
@@ -458,6 +482,7 @@ SKILLS
 
 .skills li:hover {
   background: rgba(0,0,0,0.4);
+  padding: 5px;
 }
 
 .know-icons {
@@ -641,7 +666,7 @@ FORM
   
   .cards {
     max-width: 980px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
   }
   
   section.about .container {
@@ -709,7 +734,7 @@ FORM
   }
 
   .cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
     gap: 15px;
   }
 
