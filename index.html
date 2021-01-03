@@ -92,9 +92,9 @@
         <div id="myBtnContainer">
           <button class="btn active" onclick="filterSelection('all')"> Show all</button>
           <button class="btn" onclick="filterSelection('datascience')"> Data Science</button>
-          <button class="btn" onclick="filterSelection('fullstack')"> Full Stack</button>
-          <button class="btn" onclick="filterSelection('mobile')"> Mobile (Only)</button>
-          <button class="btn" onclick="filterSelection('web')"> Web (Only)</button>
+          <button class="btn" onclick="filterSelection('fullstack')"> Full Stack (Web)</button>
+          <button class="btn" onclick="filterSelection('mobile')"> Mobile</button>
+          <button class="btn" onclick="filterSelection('qa')"> Quality Assurance</button>
         </div>
       <section class="cards" id="cards">  
 
@@ -234,7 +234,7 @@
         </a>
         </div>
 
-          <div class="column fullstack web">
+          <div class="column fullstack ">
           <a class="card" href="assets/projects/ERP-Sales/sales1.png" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'salesERP'})" data-lightbox="project2">
             <div class="image">
               <img src="assets/cards/erpcrm4.png" />
@@ -268,7 +268,7 @@
           </a>
         </div>
 
-        <div class="column web">
+        <div class="column fullstack">
         <a class="card" href="https://github.com/lrmendes/React-GraphQL-PokemonAPI" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'pokemonAPI'})" target="_blank">
           <div class="image">
             <img src="assets/projects/PokemonData/pokemonData.png" />
@@ -301,6 +301,23 @@
             </div>
           </a>
           </div>
+
+          <div class="column qa">
+            <a class="card" href="https://github.com/lrmendes/QualityAssurance-NodeJS-Mochachai" onclick="gtag('event', 'click', {'event_category': 'projects','event_label': 'qa-nodejs-s1'})" target="_blank">
+              <div class="image">
+                <img src="assets/cards/qa-node-1-3.png" />
+              </div>
+              <div class="content">
+                <p class="title text--medium">
+                  This project is the section 1 of 3 of the Quality Assurance Certification from FreeCodeCamp.
+                </p>
+                <div class="info">
+                  <p class="text--medium">Web & QA</p>
+                  <p class="price text--medium">View More</p>
+                </div>
+              </div>
+            </a>
+            </div>
 
       </section>
     </section>
