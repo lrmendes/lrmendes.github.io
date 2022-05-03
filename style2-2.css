@@ -296,11 +296,19 @@ section.about .container {
   justify-content: space-evenly;
 }
 
-section.about p {
+section.about ul {
   color: rgb(219, 207, 255);
   font-size: 1.6rem;
   line-height: 3.2rem;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 10px 10px 0px;
+}
+
+section.about li:nth-child(1n) {
+  color: rgb(226, 255, 157);
+}
+
+section.about li:nth-child(2n) {
+  color: rgb(69, 243, 229);
 }
 
 
@@ -323,7 +331,7 @@ CARDS
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(15, minmax(300px, 300px));
+  grid-template-columns: repeat(10, minmax(300px, 300px));
   grid-gap: 20px;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -489,6 +497,10 @@ SKILLS
   max-width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.know-icons.node {
+  opacity: 0.4;
 }
 
 /*=============== 
